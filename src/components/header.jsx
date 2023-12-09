@@ -5,17 +5,18 @@ import HeaderIcon from './header-icon'
 
 function Header() {
   return (
-    <div>
-        <div>
+    <div className='flex flex-col items-center text bg-gray-700 text-gray-200 p-6 sm:flex-row justify-between'>
+        <div className='flex'>
             <HeaderIcon title='HOME' Icon={HomeIcon}/>
             <HeaderIcon title='ACCOUNT' Icon={UserIcon}/>
-            <HeaderIcon title='CONTACT' Icon={PhoneIcon}/>\
+            <HeaderIcon title='CONTACT' Icon={PhoneIcon}/>
             <HeaderIcon title='ABOUT' Icon={InformationCircleIcon}/>
         </div>
         <Image 
-            src="https://www.shutterstock.com/image-vector/imdb-logo-vector-editorial-transparent-260nw-2339988595.jpg"
-            width="200"
-            height="200"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png"
+            width={200}
+            height={100}
+            className='cursor-pointer'
         />
     </div>
   )
